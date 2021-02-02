@@ -74,6 +74,11 @@ const routes: Routes = [{
       pathMatch: 'full',
     },
     {
+      path: '',
+      redirectTo: 'greetings',
+      pathMatch: 'full',
+    },
+    {
       path: '**',
       component: NotFoundComponent,
     },

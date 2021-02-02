@@ -13,4 +13,8 @@ export class DataService {
   public sendGetRequest(){
     return this.httpClient.get(this.REST_API_SERVER);
   }
+
+  public getGreetings(){
+    return this.httpClient.get(this.REST_API_SERVER + '/greetings')
+  }
 }
